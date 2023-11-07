@@ -40,6 +40,12 @@ jobs:
           BIGQUERY_PROJECT_ID: ${{ secrets.BIGQUERY_PROJECT_ID }}
           BIGQUERY_CLIENT_EMAIL: ${{ secrets.BIGQUERY_CLIENT_EMAIL }}
           BIGQUERY_PRIVATE_KEY: ${{ secrets.BIGQUERY_PRIVATE_KEY }}
+          # Uses the public ClickHouse playground API: https://clickhouse.com/docs/en/getting-started/playground
+          CLICKHOUSE_URL: https://play.clickhouse.com
+          CLICKHOUSE_PORT: 443
+          CLICKHOUSE_USERNAME: explorer
+          CLICKHOUSE_PASSWORD:
+          CLICKHOUSE_DATABASE: default
           SEND_ANONYMOUS_USAGE_STATS: ${{ secrets.SEND_ANONYMOUS_USAGE_STATS }}
           SQLITE_FILENAME: ':memory:'
           DUCKDB_FILENAME: ':memory:'

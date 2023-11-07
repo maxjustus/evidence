@@ -9,6 +9,7 @@
 	import DuckdbForm from './DuckdbForm.svelte';
 	import DatabricksForm from './DatabricksForm.svelte';
 	import CSVForm from './CSVForm.svelte';
+	import ClickhouseForm from './ClickhouseForm.svelte';
 	import MSSQLForm from './MSSQLForm.svelte';
 
 	import { slide, blur } from 'svelte/transition';
@@ -39,6 +40,7 @@
 		{ id: 'duckdb', name: 'DuckDB', formComponent: DuckdbForm },
 		{ id: 'databricks', name: 'Databricks', formComponent: DatabricksForm },
 		{ id: 'csv', name: 'CSV', formComponent: CSVForm },
+		{ id: 'clickhouse', name: 'ClickHouse', formComponent: ClickhouseForm },
 		{ id: 'mssql', name: 'SQL Server', formComponent: MSSQLForm }
 	];
 
